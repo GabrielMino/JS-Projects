@@ -5,5 +5,7 @@ The app  makes use of the OpenWeatherMap service for fetching and displaying wea
 
 Resources:
 https://www.studytonight.com/post/how-to-build-a-weather-app-using-javascript-for-complete-beginners
+
 https://openweathermap.org/current
+
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/

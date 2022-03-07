@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+
+
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+    --silver: #C0C0C0;
+    --turq: #5dc1b9;
+	--light: #EEE;
+    --black: #191a19;
+    --blue:#3a5997 ;
+    --bluelight: #7c92bd;
+    --green: rgb(78, 155, 67);
+    --greenOpacity: rgba(78, 155, 67,0.5);
+    --lightblue:#bdd2fd;
+    --body-font:'Merriweather', serif;
+    --title-font:'Poppins', sans-serif;
+    /* font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;*/
+
+}
+.background{
+    
+    background-color: aliceblue;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+      
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    
+
+}
+
+.app{
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:20px 20px;
+    background-color: var(--lightblue);
+    font-family: var(--body-font);
+    width: 400px; 
+    height: 600px; 
+    justify-content:space-between;
+    align-items: center;
+    border-radius:10%;
+    margin-top: 10px;
+    
+
+}
+
+.title{
+    font-family: var(--title-font);
+    color:var(--darkest);
+    
+}
+
+.search{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+
+.city{
+
+        
+    /*flex: 1 1 0%;*/
+    width:90%;
+    padding: 0.3rem;
+    /* margin-right: 1rem;*/
+    color: var(--darkest);
+    font-size: 1rem;
+    margin-left: 0%;
+        
+    }
+.city::placeholder {
+    color: var(--grey);
+    }
+.country-div{
+    display:flex;
+    align-items:baseline;
+    
+}
+
+.country{   /*flex: 1 1 0%;*/
+    width:45%;
+    height:30%;
+    padding: 0.3rem;
+   /* margin-right: 1rem;*/
+    color: var(--darkest);
+    font-size: 1rem;
+    margin-left: 0%;   
+    }
+
+.country::placeholder {
+    color: var(--grey);
+    }   
+
+.optional{
+    height:20%;
+    color:var(--dark);
+    margin-left: 5% ;
+}
+
+
+
+.submit{
+    background-color: var(--greenOpacity);
+    border: none;
+    padding: 2px 4px;
+    text-align: center;
+    width:70%;
+    font-size: 0.7rem;
+    margin: -8px 2px;
+    /*opacity: 0.5;*/
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius:10%;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
+    margin-left:15%;
+    
+}
+
+.submit:hover {
+  
+    background-color: var(--green)
+}
+
+
+.box-information{
+    width: 200px; 
+    height: 300px; 
+    border-radius:10%;
+    display:flex;
+    flex-direction:column;
+    /*justify-content:space-between;*/
+    align-items: center;
+    font-family: var(--title-font);
+    gap:1px;
+
+    
+    /*padding:20 px 20 px*/
+    
+}
+
+.imagen {
+        /*max-width: 300%;*/
+        background-color: var(--light);
+        width:55%; /* you can use % */
+        height: auto;
+        border-color: var(--); 
+        border-radius:10%;
+        
+        
+    
+
+}
+
+.type,.location1 {
+    font-size: 0.8rem;
+    color:--dark;
+
+}
+
+.temp{
+
+    font-size: 3rem;
+    color:var(--darkest);
+
+}
+
+
+
+
+
+
+
+/*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/

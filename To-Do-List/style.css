@@ -1,0 +1,176 @@
+/*Las variables CSS permiten que un valor se almacene en un lugar y luego se haga referencia en varios otros lugares. */
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+    --silver: #C0C0C0;
+    --turq: #5dc1b9;
+	--light: #EEE;
+    --black: #191a19;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+    /*takes the hole page*/
+	/*min-height: 100vh;*/
+	color: #FFF;
+	background-color: var(--darker);
+}
+
+header {
+    /* to brings down*/
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: auto;
+    
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 1rem;
+}
+
+
+#new-task-form {
+	display: flex;
+    
+}
+
+input, button {
+	border-style: solid;
+    border-color: var(--black);
+    border-radius: 12px;
+    
+    
+}
+
+#task-input {
+	flex: 1 1 0%;
+	padding: 1rem;
+	margin-right: 1rem;
+	color: var(--darkest);
+	font-size: 1.25rem;
+    
+}
+
+#task-input::placeholder {
+	color: var(--grey);
+	opacity: 0.5;
+}
+
+#task-submit {
+	color: var(--black);
+	font-size: 1rem;
+	font-weight: 500;
+    background-color: var(--silver);
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#task-submit:hover {
+	opacity: 0.8;
+}
+
+#task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 0.5rem;
+	
+}
+
+
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task.check {
+	flex: 1 1 0%;
+}
+
+.task .check #check-input {
+
+	cursor: pointer;
+	margin: 10px 10px;
+  	position: relative;
+	transform: scale(1.3);
+}
+
+.task .content {
+	display:flex;
+	margin: 0 0.5rem;
+}
+
+.task .content .text {
+	color: var(--black);
+    padding:0rem 8rem;
+	font-size: 1.2rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+    
+	color: var(--black);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	background-color: var(--silver);
+	font-weight: 700;
+	transition: 0.4s;
+	
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+
+.task .actions .delete {
+	color: crimson;
+}

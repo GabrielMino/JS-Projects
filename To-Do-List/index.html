@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel = "stylesheet" href="style.css"/> 
+</head>
+<body>
+    <header>
+        <h1>TO-DO LIST</h1>
+        <!-- The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.-->
+        <form id = new-task-form>
+            <input 
+                type="text" 
+                id="task-input" 
+                placeholder="Add a to do" />
+            <input 
+                type = "submit"
+                id="task-submit"
+                value = "Add Task"/>
+        </form> 
+    </header>
+
+    <!-- El elemento HTML <main> representa el contenido principal del <body> de un documento o aplicación-->
+    <main>
+        <!--section representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema-->
+        <section class="task-list">
+            <h2>Tasks</h2>
+
+            <div id="tasks">
+               <!-- <div class="task">
+                    <div class = "check">
+                        <input id ="check-input" type="checkbox"> 
+                    </div>
+                    <div class = "content">
+                        <input
+                            type="text"
+                            class="text"
+                            value="First Task"
+                            readonly/>  
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class ="delete">Delete</button>
+                    </div> 
+                    
+                </div>-->
+
+        
+            </div>
+        </section>
+    </main>
+    
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

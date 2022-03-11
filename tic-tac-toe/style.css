@@ -1,0 +1,117 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+    --silver: #C0C0C0;
+    --turq: #5dc1b9;
+	--light: #EEE;
+    --black: #191a19;
+    --blue:#3a5997 ;
+    --bluelight: #7c92bd;
+    --red: rgba(219, 15, 15,1);
+    --redOpacity: rgba(219, 15, 15,0.5);
+
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family: "Itim", cursive;
+    background-color:var(--blue);
+   
+}
+
+.background{
+   
+    max-width: 500px;
+    margin:auto;
+    
+}
+/*
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+.boards{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+*/
+.title{
+    text-align:center;
+
+}
+
+.board{
+    display:table;
+    padding: 40px;
+    margin:auto;
+    
+}
+
+.divRow{
+    display:flex;
+}
+
+
+.cell{
+    border: 4px solid black;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor:pointer;
+    
+}
+
+.cell:hover {
+    background-color: var(--bluelight);
+
+    
+  }
+
+  .bottom{
+      display:flex;
+      justify-content:space-around;
+      padding: 20px 
+  }
+
+  .status{
+    font-size: 25px;
+    margin: 0 .5em 0 .5em;  
+    
+    
+}
+
+
+
+.restart{
+    background-color: var(--redOpacity);
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 25px;
+    margin: -8px 2px;
+    /*opacity: 0.5;*/
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius:30%;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
+    
+}
+
+.restart:hover {
+  
+    background-color: red
+}
+
+
+
+
+
+
